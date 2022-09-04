@@ -120,8 +120,11 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-PAYSTACK_PUBLIC_KEY = os.environ.get('PAYSTACK_PRIVATE_KEY')
-PAYSTACK_PUBLIC_KEY = os.environ.get('PAYSTACK_PUBLIC_KEY')
+
+PAYSTACK_SECRET_KEY = os.environ.get('sk_test_77611a07130923dca7a03422c6852f5f0c5378e1')
+PAYSTACK_PUBLIC_KEY = os.environ.get('pk_test_a621dbced4253672603830c28bbf322cd0ae41c6')
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
